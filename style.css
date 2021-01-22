@@ -1,0 +1,193 @@
+body{
+    height:100%;
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#191919;
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+}
+.nav-list{
+    display:flex;
+    margin-right: 2rem;
+}
+
+li{
+    padding:0 40px;
+    list-style-type: none;
+}
+nav a{
+    text-decoration:none;
+    color:white;
+    cursor:pointer;
+}
+nav a:hover{
+    border-bottom:lightcoral 4px solid;
+    border-radius:5px;
+}
+#welcome-section{
+    display:block;
+    height:100vh;
+    background-color:#191919;
+    position:relative;
+}
+.intro {
+    text-align:left;
+    position:absolute;
+    top:50%;
+    left:30%;
+    transform:translate(-50%,-50%);
+}
+.intro h1{
+    font-size:4rem;
+    letter-spacing:0.1em;
+}
+.intro p{
+    font-size:1.5rem;
+}
+.circle-outline{
+    margin:0;
+    padding:0;
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    border:lightcoral 5px solid;
+    position:absolute;
+    top:30%;
+    left:65%;
+}
+.circle{
+    margin:0;
+    padding:0;
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    background-color:lightcoral;
+    position:absolute;
+    top:35%;
+    left:70%;
+}
+.triangle{
+    width:0;
+    height:0;
+    border-top: 100px solid transparent;
+    border-left: 200px solid #fff;
+    border-bottom: 100px solid transparent;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.triangle-small{
+    width:0;
+    height:0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid lightcoral;
+    border-bottom: 50px solid transparent;
+    position:absolute;
+    top:15%;
+    left:10%;
+
+}
+#project h3{
+    text-align:center;
+    font-size: 1.6rem;
+}
+.project-tile{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align:center;
+    max-width:1100px;
+    padding:0;
+}
+.project-tile li{
+    display:inline-block;
+    width:420px;
+    margin: 0 12px 30px;
+}
+
+.project-tile li > a{
+    display: block;
+    text-decoration: none;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:400px;
+    margin:0;
+    padding:0;
+    border: 4px solid #000;
+}
+.project-tile .details{
+    margin-top: 20px;
+}
+
+.project-tile .details h3{
+    display: block;
+    font-size: 1.1rem;
+    margin: 0 0 3px 0;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.project-tile .details h3 a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.project-tile .details h3 a:hover{
+    color:lightcoral;
+
+}
+#contact{
+    text-align:center;
+}
+#contact h3{
+    font-size: 1.6rem;
+}
+#contact a{
+    text-decoration:none;
+    color:#fff;
+}
+#contact a:hover{
+    color: lightcoral;
+
+@media only screen and (max-width:600px){
+    nav ul{
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:10;
+    }
+    .intro h1{
+        font-size:2rem;
+        letter-spacing:0.1em;
+        margin-left: 50px;
+        
+    }
+    .intro p{
+        font-size:1.1rem;
+        margin-left: 50px;
+    }
+
+    .circle-outline{
+       display:none;
+    }
+    .circle{
+        display:none;
+    }
+   
+}
+
+
+
+
+
+
+
